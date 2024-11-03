@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - The Global Sustainable Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('C:/Users/Win%2010%20Pro/Desktop/Pics/conta.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .home-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .home-button:hover {
+      background-color: #45a049;
+    }
+
+    .contact-info, form {
+      background-color: rgb(73, 203, 255);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h2, h3 {
+      color: #fc0000;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-info ul li {
+      margin: 0.5rem 0;
+    }
+
+    .contact-info a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #00ff2a;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-container">
+    <a href="index.html" class="home-button">Home</a>
+
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 999 Montana Drive, Westgate, Zimbabwe</p>
+      <p><strong>Phone:</strong> +91 211 8833</p>
+      <p><strong>Email:</strong> <a href="mailto:contact@globalsustainability.org">contact@globalsustainability.org</a></p>
+      <p><strong>Office Hours:</strong> Monday - Friday: 8am - 5pm EAT</p>
+      <h3>Follow Us:</h3>
+      <ul>
+        <li><a href="https://Twitter.com/theglobalsustainability">Twitter</a></li>
+        <li><a href="https://facebook.com/theglobalsustainability">Facebook</a></li>
+        <li><a href="https://Linkedin.com/theglobalsustainability">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <form>
+      <h2>Get in Touch:</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>

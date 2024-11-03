@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('C:\Users\Win 10 Pro\Desktop\Pics\Kariba.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .contact-info {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
