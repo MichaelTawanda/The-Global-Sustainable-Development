@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-image: url(/"K1.jpg"); /* Updated to Kariba.jpg */
+      background-image: url("K1.jpg"); 
       background-size: cover;
       background-position: center;
       color: #333;
@@ -19,12 +19,17 @@
     /* Semi-transparent overlay for readability */
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
+      z-index: 0; /* Behind content */
+    }
+
+    .content {
+      position: relative;
+      z-index: 1; /* Above overlay */
     }
 
     header {
@@ -62,7 +67,6 @@
       padding: 20px;
       color: white;
       text-align: center;
-      position: relative;
     }
 
     footer {
@@ -81,25 +85,27 @@
 <body>
   <div class="overlay"></div>
 
-  <header>
-    The Global Sustainable Development
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="getinvolved.html">Get Involved</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="content">
+    <header>
+      The Global Sustainable Development
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="getinvolved.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <p>Welcome to our mission at The Global Sustainable Development, where we aim to balance conservation, equity, and growth. Learn more about our efforts at Kariba and beyond.</p>
-  </main>
+    <main>
+      <p>Welcome to our mission at The Global Sustainable Development, where we aim to balance conservation, equity, and growth. Learn more about our efforts at Kariba and beyond.</p>
+    </main>
 
-  <footer>
-    &copy; 2024 The Global Sustainable Development. All rights reserved.
-  </footer>
+    <footer>
+      &copy; 2024 The Global Sustainable Development. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
